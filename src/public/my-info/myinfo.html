@@ -1,0 +1,13 @@
+<div class="container">
+	<h1 ng-if="!myInfoCtrl.dish">Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a></h1>
+	<div ng-show="myInfoCtrl.name">
+	<h1>Here are your informations:</h1>
+	<div class="infor">Your name is: {{myInfoCtrl.name}}</div>
+	<div class="infor">Your surname is: {{myInfoCtrl.surname}}</div>
+	<div class="infor">Your email is: {{myInfoCtrl.email}}</div>
+	<div class="infor">Your phone number is: {{myInfoCtrl.phone}}</div>
+	<div class="infor">Your favoriet dish is: {{myInfoCtrl.dish}}, </div>
+	<div class="infor">It's menu name is: {{myInfoCtrl.title}} </div>
+	<div class="inforl">And the menu meal description is: {{myInfoCtrl.description}}</div><img class="informr"ng-src='https://lazzarone83-restaurant.herokuapp.com/images/{{myInfoCtrl.dish}}'>
+	</div>
+</div>
